@@ -24,7 +24,7 @@ import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 class EgyDead : MainAPI() {
-    override var mainUrl = "https://egydead.beer"
+    override var mainUrl = "https://tv8.egydead.live"
     override var name = "ايجي ديد"
     override val hasMainPage = true
     override var lang = "ar"
