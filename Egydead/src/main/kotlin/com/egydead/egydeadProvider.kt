@@ -60,7 +60,7 @@ class EgyDead : MainAPI() {
                 "Referer" to "$mainUrl/"
             )
 
-            cloudflareKiller.savedCookies["egydead.beer"]?.let { cookies ->
+            cloudflareKiller.savedCookies["tv8.egydead.live"]?.let { cookies ->
                 if (cookies.isNotEmpty()) {
                     headers["Cookie"] = cookies.entries.joinToString("; ") { "${it.key}=${it.value}" }
                 }
@@ -111,7 +111,7 @@ class EgyDead : MainAPI() {
     }
 
     private suspend fun runCloudflareBypass() {
-        val host = "egydead.beer"
+        val host = "tv8.egydead.live"
 
         if (cloudflareKiller.savedCookies.containsKey(host)) {
             cfBypassed = true
